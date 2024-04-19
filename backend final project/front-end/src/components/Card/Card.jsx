@@ -5,7 +5,7 @@ const Card = ({movie}) => {
     <>
       <div className={styles.card}>
         <img
-          src={`http://localhost:3000/${movie.image}`}
+          src={`https://backend-build-api-11.onrender.com/${movie.image}`}
           alt={movie.title}
           className={styles.poster}
         />
