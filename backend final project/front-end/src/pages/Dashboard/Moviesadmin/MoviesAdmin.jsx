@@ -66,7 +66,7 @@ function MoviesAdmin() {
           {movies.map((movie) => (
             <div key={movie._id} className={styles.product_card}>
               <img
-                src={`http://localhost:3000/${movie.image}`}
+                src={`https://backend-build-api-11.onrender.com/${movie.image}`}
                 alt="movie image"
               />
               <div className={styles.product_details}>
