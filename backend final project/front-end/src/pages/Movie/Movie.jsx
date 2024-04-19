@@ -17,7 +17,7 @@ const Movie = () => {
       try {
         const accessToken = localStorage.getItem("accessToken");
         const response = await fetch(
-          `http://localhost:3000/api/comments?movieId=${id}`,
+          `https://backend-build-api-11.onrender.com/api/comments?movieId=${id}`,
           {
             method: "GET",
             headers: {
@@ -57,7 +57,7 @@ const Movie = () => {
     }
     try {
       const accessToken = localStorage.getItem("accessToken");
-      const response = await fetch("http://localhost:3000/api/comments", {
+      const response = await fetch("https://backend-build-api-11.onrender.com/api/comments", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
